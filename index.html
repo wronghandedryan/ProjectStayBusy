@@ -19,10 +19,11 @@
   <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 
   <!-- CSS-->
-
- 
+  <link rel="stylesheet" href="BMI.css">
+  
 
   <!--ajax-->
+  <script src="relax\bmiCalculator.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <!--jquery mobile-->
   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
@@ -32,6 +33,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
   <!--jquery ui-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
   <!--Font awesome -->
@@ -62,8 +65,55 @@
       </div>
     </div>
   </header>
-  <div class="container">
     <div class="row">
+      <div class="col-6">
+        <body class="bmiLanding">
+          <a id="advBMITop" name="advBMITop"></a>
+          <div id="advBMIouterHolder">
+            <div id="BMIHolder">
+              <div id="advBMIEntry" class="advBMIContent">
+                <div id="startHolder">
+                      <span class="title">Compute Your BMI</span>
+                      <div>
+                <p class="fieldHolder"><input placeholder="Weight" id="advBMIWeight" pattern="\d*"><span>lbs</span></p>
+                <p class="fieldHolder height_ft"><input placeholder="Height" id="advBMIHeightFeet" pattern="\d*"><span>ft</span></p>
+                <p class="fieldHolder height_in"><input placeholder="Height" id="advBMIHeightInches" pattern="\d*"><span>in</span></p>
+                <p class="fieldHolder gender"><select onchange="changeMe(this)" id="advBMISex"><option selected="" disabled=""> Gender </option> <option value="Male"> Male </option> <option value="Female"> Female </option></select></p>
+                          </div>
+                          <input onclick="ShowADVBMIResults();" value="Calculate" id="advBMISubmit" type="button">
+              </div><div style="display:none;" id="enteredHolder">
+                      <div class="advBMIHeader">You are a:</div>
+                        <div>
+                <p class="fieldHeader"><span id="enteredLBS"></span> lbs,</p>
+                <p class="fieldHeader"><span id="enteredFeet"></span> ft</p>
+                <p class="fieldHeader"><span id="enteredInches"></span> in,</p>
+                <p class="fieldHeader gender"><span id="enteredSex"></span></p>
+                          </div>
+                          <div class="clearfix"></div>
+                      <div id="proteinHeader" class="advBMIHeader">Your current BMI is:</div>
+                      <div id="proteinContent" class="advBMIContent">
+                          <span id="advBMICurrent"></span>
+                      </div>
+                      <input onclick="window.close();" value="Close Window" id="advBMIReset" type="button">
+                      <input onclick="ResetADVBMIResults();" value="Reset" id="advBMIResets" type="button">
+              </div>
+              <div class="clearfix">
+              </div>
+            </div>
+          </div>
+        </div>
+          <script type="text/javascript">
+          function changeMe(sel)
+          {
+            sel.style.color = "#3a3a3a";              
+          }
+      </script>
+      </div>
+      <div class="col-6">
+
+      </div>
+      
+      </body>
 <br>
 <br>
 <br>
