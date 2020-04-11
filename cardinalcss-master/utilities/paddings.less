@@ -1,0 +1,212 @@
+/* ========================================================================== *\
+   Utilities -> Paddings ($utilities-paddings)
+\* ========================================================================== */
+
+//
+// p  = padding
+// t  = top
+// r  = right
+// b  = bottom
+// l  = left
+// h  = horizontal
+// v  = vertical
+// -- = quarter
+// -  = half
+// +  = double
+// ++ = quadruple
+// 0  = none
+//
+
+/**
+ * Hat tip to @csswizardry for the +/- technique.
+ *
+ * @link http://cbrac.co/1Pd1ZKl
+ */
+
+.breakpoint-prefixes({
+  // Whole
+  .@{breakpoint-prefix}p {
+    .to-rem(padding, @spacing-base, ~"!important");
+  }
+
+  .@{breakpoint-prefix}pt {
+    .to-rem(padding-top, @spacing-base, ~"!important");
+  }
+
+  .@{breakpoint-prefix}pr {
+    .to-rem(padding-right, @spacing-base, ~"!important");
+  }
+
+  .@{breakpoint-prefix}pb {
+    .to-rem(padding-bottom, @spacing-base, ~"!important");
+  }
+
+  .@{breakpoint-prefix}pl {
+    .to-rem(padding-left, @spacing-base, ~"!important");
+  }
+
+  .@{breakpoint-prefix}ph {
+    .to-rem(padding-right, @spacing-base, ~"!important");
+    .to-rem(padding-left, @spacing-base, ~"!important");
+  }
+
+  .@{breakpoint-prefix}pv {
+    .to-rem(padding-top, @spacing-base, ~"!important");
+    .to-rem(padding-bottom, @spacing-base, ~"!important");
+  }
+
+  // Quarter (--)
+  .@{breakpoint-prefix}p-- {
+    .to-rem(padding, @spacing-fourth, ~"!important");
+  }
+
+  .@{breakpoint-prefix}pt-- {
+    .to-rem(padding-top, @spacing-fourth, ~"!important");
+  }
+
+  .@{breakpoint-prefix}pr-- {
+    .to-rem(padding-right, @spacing-fourth, ~"!important");
+  }
+
+  .@{breakpoint-prefix}pb-- {
+    .to-rem(padding-bottom, @spacing-fourth, ~"!important");
+  }
+
+  .@{breakpoint-prefix}pl-- {
+    .to-rem(padding-left, @spacing-fourth, ~"!important");
+  }
+
+  .@{breakpoint-prefix}ph-- {
+    .to-rem(padding-right, @spacing-fourth, ~"!important");
+    .to-rem(padding-left, @spacing-fourth, ~"!important");
+  }
+
+  .@{breakpoint-prefix}pv-- {
+    .to-rem(padding-top, @spacing-fourth, ~"!important");
+    .to-rem(padding-bottom, @spacing-fourth, ~"!important");
+  }
+
+  // Half (-)
+  .@{breakpoint-prefix}p- {
+    .to-rem(padding, @spacing-half, ~"!important");
+  }
+
+  .@{breakpoint-prefix}pt- {
+    .to-rem(padding-top, @spacing-half, ~"!important");
+  }
+
+  .@{breakpoint-prefix}pr- {
+    .to-rem(padding-right, @spacing-half, ~"!important");
+  }
+
+  .@{breakpoint-prefix}pb- {
+    .to-rem(padding-bottom, @spacing-half, ~"!important");
+  }
+
+  .@{breakpoint-prefix}pl- {
+    .to-rem(padding-left, @spacing-half, ~"!important");
+  }
+
+  .@{breakpoint-prefix}ph- {
+    .to-rem(padding-right, @spacing-half, ~"!important");
+    .to-rem(padding-left, @spacing-half, ~"!important");
+  }
+
+  .@{breakpoint-prefix}pv- {
+    .to-rem(padding-top, @spacing-half, ~"!important");
+    .to-rem(padding-bottom, @spacing-half, ~"!important");
+  }
+
+  // Double (+)
+  .@{breakpoint-prefix}p\+ {
+    .to-rem(padding, @spacing-double, ~"!important");
+  }
+
+  .@{breakpoint-prefix}pt\+ {
+    .to-rem(padding-top, @spacing-double, ~"!important");
+  }
+
+  .@{breakpoint-prefix}pr\+ {
+    .to-rem(padding-right, @spacing-double, ~"!important");
+  }
+
+  .@{breakpoint-prefix}pb\+ {
+    .to-rem(padding-bottom, @spacing-double, ~"!important");
+  }
+
+  .@{breakpoint-prefix}pl\+ {
+    .to-rem(padding-left, @spacing-double, ~"!important");
+  }
+
+  .@{breakpoint-prefix}ph\+ {
+    .to-rem(padding-right, @spacing-double, ~"!important");
+    .to-rem(padding-left, @spacing-double, ~"!important");
+  }
+
+  .@{breakpoint-prefix}pv\+ {
+    .to-rem(padding-top, @spacing-double, ~"!important");
+    .to-rem(padding-bottom, @spacing-double, ~"!important");
+  }
+
+  // Quadruple (++)
+  .@{breakpoint-prefix}p\+\+ {
+    .to-rem(padding, @spacing-quadruple, ~"!important");
+  }
+
+  .@{breakpoint-prefix}pt\+\+ {
+    .to-rem(padding-top, @spacing-quadruple, ~"!important");
+  }
+
+  .@{breakpoint-prefix}pr\+\+ {
+    .to-rem(padding-right, @spacing-quadruple, ~"!important");
+  }
+
+  .@{breakpoint-prefix}pb\+\+ {
+    .to-rem(padding-bottom, @spacing-quadruple, ~"!important");
+  }
+
+  .@{breakpoint-prefix}pl\+\+ {
+    .to-rem(padding-left, @spacing-quadruple, ~"!important");
+  }
+
+  .@{breakpoint-prefix}ph\+\+ {
+    .to-rem(padding-right, @spacing-quadruple, ~"!important");
+    .to-rem(padding-left, @spacing-quadruple, ~"!important");
+  }
+
+  .@{breakpoint-prefix}pv\+\+ {
+    .to-rem(padding-top, @spacing-quadruple, ~"!important");
+    .to-rem(padding-bottom, @spacing-quadruple, ~"!important");
+  }
+
+  // None (0)
+  .@{breakpoint-prefix}p0 {
+    .to-rem(padding, @spacing-none, ~"!important");
+  }
+
+  .@{breakpoint-prefix}pt0 {
+    .to-rem(padding-top, @spacing-none, ~"!important");
+  }
+
+  .@{breakpoint-prefix}pr0 {
+    .to-rem(padding-right, @spacing-none, ~"!important");
+  }
+
+  .@{breakpoint-prefix}pb0 {
+    .to-rem(padding-bottom, @spacing-none, ~"!important");
+  }
+
+  .@{breakpoint-prefix}pl0 {
+    .to-rem(padding-left, @spacing-none, ~"!important");
+  }
+
+  .@{breakpoint-prefix}ph0 {
+    .to-rem(padding-right, @spacing-none, ~"!important");
+    .to-rem(padding-left, @spacing-none, ~"!important");
+  }
+
+  .@{breakpoint-prefix}pv0 {
+    .to-rem(padding-top, @spacing-none, ~"!important");
+    .to-rem(padding-bottom, @spacing-none, ~"!important");
+  }
+});

@@ -1,0 +1,29 @@
+/* ========================================================================== *\
+   Utilities -> Positions ($utilities-positions)
+\* ========================================================================== */
+
+//
+// pos = position
+// a   = absolute
+// f   = fixed
+// r   = relative
+// s   = static
+//
+
+.breakpoint-prefixes({
+  .@{breakpoint-prefix}posa {
+    position: absolute !important;
+  }
+
+  .@{breakpoint-prefix}posf {
+    position: fixed !important;
+  }
+
+  .@{breakpoint-prefix}posr {
+    position: relative !important;
+  }
+
+  .@{breakpoint-prefix}poss {
+    position: static !important;
+  }
+});
