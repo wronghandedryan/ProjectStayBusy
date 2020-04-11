@@ -1,0 +1,27 @@
+{
+    "configurations": [
+        {
+            "name": "Browser Preview: Attach",
+            "request": "attach",
+            "type": "browser-preview"
+        },
+        {
+            "name": "Browser Preview: Launch",
+            "request": "launch",
+            "type": "browser-preview",
+            "url": "http://localhost:3000"
+        },
+        {
+            "name": "Browser Preview: Attach",
+            "request": "attach",
+            "type": "browser-preview"
+        },
+        {
+            "name": "Browser Preview: Launch",
+            "request": "launch",
+            "type": "browser-preview",
+            "url": "http://localhost:3000"
+        }
+    ],
+    "version": "0.2.0"
+}
