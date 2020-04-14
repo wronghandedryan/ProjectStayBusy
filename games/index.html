@@ -16,10 +16,7 @@
 
 
   <!-- CSS-->
-
-
-
-  <!--ajax-->
+  <link rel="stylesheet" src="\reset.css" <!--ajax-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <!--jquery mobile-->
 
@@ -27,22 +24,27 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+
   <!--Font awesome -->
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css"
     integrity="sha384-IIED/eyOkM6ihtOiQsX2zizxFBphgnv1zbe1bKA+njdFzkr6cDNy16jfIKWu4FNH" crossorigin="anonymous">
   <!--web font loader-->
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
   <!--person stylesheet-->
-  <link rel="stylesheet" src="stylesheet.css">
+  <link rel="stylesheet" src="\stylesheet.css">
+  <link rel="stylesheet" href="baloon.css">
 </head>
+
 <body>
   <div class="w3-bar w3-black" id="navigation">
     <a href="#" class="w3-bar-item w3-button">Home<i class="fa fa-home"></i></a>
     <a href="#" class="w3-bar-item w3-button">News<i class="fal fa-newspaper"></i></a>
     <a href="#" class="w3-bar-item w3-button">Relax<i class="fal fa-hand-peace"></i></a>
     <a href="#" class="w3-bar-item w3-button">Games <i class="fad fa-joystick"></i></a>
+    <a href="#" class="w3-bar-item w3-button">Mental Health Resources<i class="fas fa-head-side-brain"></i></a>
   </div>
+
+  <!--header-->
   <header class="w3-container w3-theme w3-padding w3-animate-top" id="myHeader">
     <div class="w3-center">
       <span style="font-size: 6em; color: rgb(182, 27, 0);">
@@ -50,45 +52,49 @@
       </span>
 
       <h1>Keep My Mind Busy</h1>
-      <h5 ">For those who want to escape all of the Covid-19 sensationalism.</h5>
+      <h5>For those who want to escape all of the Covid-19 sensationalism.</h5>
       <div class="">
         <h4>For everyone else who cant get enough of the media sensationalism</h4>
         <div class=" w3-xlarge w3-dark-grey"><a href="https://www.cdc.gov/coronavirus/2019-nCoV/index.htmlm">CDC
-          Covid-19</a>
-    </div>
-    </div>
+            Covid-19</a>
+        </div>
+      </div>
     </div>
   </header>
-  <div class="container">
-    <div class="row">
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
+  <!--end header-->
+ 
+  <main class="w3-main w3-cell" >
+    <div class="w3-container w3-cell w3-black w3-cell-middle" id="jokes">
+      <div class="one-half column" style="margin-left: 10px;">
+        <h4>Random Jokes</h4>
+        <p id="joke">Click the button for a random joke to appear here.</p>
+        <p><small id="answer"></small></p>
+
+        <label class="show-nsfw">
+          <input id="checkbox" type="checkbox">
+          <span class="label-body">Show NSFW</span>
+        </label>
+        <button type="button" name="button" class="w3-round">Generate Joke</button>
+      </div>
     </div>
-  </div>
 
+    <div class="w3-container w3-padding-10" id="snake-game">
+      <canvas width="250" height="250" id="draw-board"></canvas>
+      <div id="score">Score: 0</div>
+      <button id="play">Play</button>
+    </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    </div>
+    </div>
+    </div>
 
-  <footer class="w3-container w3-theme-dark">
+  </main>
 
-
-    <div class="w3-display-container w3-black" style="height:125px;">
+  <div class="w3-footer w3-container w3-theme-dark w3-padding-16">
+    <div class="w3-display-container w3-black" style="height:80px;">
       <div class="w3-display-topmiddle" id="bottom-text">
         <nobr>Hopefully this helped break up the boredom. However, for everyone else who can't get enough of the media
           sensationalism
@@ -103,13 +109,14 @@
       <div class="w3-display-right">
         <p><i class="fad fa-subway"></i>ThomasTheTrain Development</p>
       </div>
-    </div>
-
-    </div>
-  </footer>
+  </div>
 
 
 
+
+  <script type="text/javascript" src="games.js"></script>
+
+  <script type="text/javascript" src="balloongame.js"></script>
 
 </body>
 

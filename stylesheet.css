@@ -33,11 +33,3 @@
   .topnav a.active {
     background-color: rgb(0, 0, 0);
     color: white;
-  }
-  
-  #bottom-text {
-    font-size: .5rem;
-    font-weight: 10;
-    text-align: center;
-    width: 100%;
-  }
