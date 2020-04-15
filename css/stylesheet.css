@@ -2,6 +2,15 @@
   font-family: 'Nunito Sans', sans-serif;
 }
 
+html {
+  min-height: auto;
+}
+
+body {
+  min-height: 100vh;
+}
+
+
 .a {
     visibility: visible;
   }
@@ -33,3 +42,29 @@
   .topnav a.active {
     background-color: rgb(0, 0, 0);
     color: white;
+  }
+  
+  #bottom-text {
+    font-size: .5rem;
+    font-weight: 10;
+    text-align: center;
+    width: 100%;
+  }
+  
+  
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+canvas {
+    width: 80vmin;
+    border: 10px solid cornflowerblue;
+  }
+
+  main{
+    border: 5px;
+  }
+
+  #jokes{
+    box-sizing: border-box;
+  }
