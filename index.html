@@ -16,7 +16,7 @@
 
   <!-- FONT-->
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 
   <!-- CSS-->
   <link rel="stylesheet" href="reset.css">
@@ -25,6 +25,7 @@
   
   
   <script src="BMI.js"></script>
+  <script src="youtube.js"></script>
   <!--ajax-->
   <script src="relax\bmiCalculator.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -66,8 +67,9 @@
       <p>A space for those who want to escape the COVID-19 negativity.</p>
     </div>
   </header>
-    <div class="row">
-      <div class="col-6">
+  <div id="mainContent">
+    <div class="w3-row" style="background-color: black;">
+      <div class="w3-col m6 p1">
           <form id="form" name="bmiCalc">
             <div class="bmiLanding">BMI Calculator</div>
             <div class="sub">Body Mass Indicator for Adults</div>
@@ -97,39 +99,63 @@
                 </div>
             </form>
           <script type="text/javascript">
-          function changeMe(sel)
-          {
-            sel.style.color = "#3a3a3a";              
-          }
-      </script>
+            function changeMe(sel)
+            {
+              sel.style.color = "#3a3a3a";              
+            }
+        </script>
+      </div>
+      <div class="w3-col m6 p1">
+        <div class="youtube-responsive-container">
+          <section id="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/4pKly2JojMw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </section> 
+          <article class="w3-row">
+            <div class="detail">
+              <div class="w3-col m3">
+                <img src="https://i.ytimg.com/vi_webp/cnKZit6VB44/mqdefault.webp" alt="" class="thumb">
+              </div>
+              <div class="w3-col m9">
+                <h4>Title</h4>
+                <p>I am a description</p>
+              </div>
+            </div>
+            <div class="detail">
+              <div class="w3-col m3">
+                <img src="https://i.ytimg.com/vi_webp/cnKZit6VB44/mqdefault.webp" alt="" class="thumb">
+              </div>
+              <div class="w3-col m9">
+                <h4>Title</h4>
+                <p>I am a description</p>
+              </div>
+            </div>
+            <div class="detail">
+              <div class="w3-col m3">
+                <img src="https://i.ytimg.com/vi_webp/cnKZit6VB44/mqdefault.webp" alt="" class="thumb">
+              </div>
+              <div class="w3-col m9">
+                <h4>Title</h4>
+                <p>I am a description</p>
+              </div>
+            </div>
+          </article>
+        </div>  
+      </div>
     </div>
-  <div class="col-6" id="video">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/4pKly2JojMw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>    
-
-
-      
-      
-</body>      
-
+  </div>
+  <footer class="w3-container w3-theme-dark">
+    <div class="w3-display-container w3-black" st
+    yle="height:100px;">
+      <div class="w3-display-topmiddle" id="bottom-text"><br>Hopefully this helped break up the boredom. However, for everyone else who can't get enough of the media sensationalism
+        <a href="https://www.cdc.gov/coronavirus/2019-nCoV/index.htmlm">CDC Covid-19</a>     
+      </div> 
+      <div class="w3-display-bottomleft"><p><i class="fas fa-fist-raised w3"></i>WrongHanded Development</p></div>
+      <div class="w3-display-bottommiddle"><p><i class="fas fa-peace"></i>LoFoSho Development</p></div>
+      <div class="w3-display-bottomright"><p><i class="fad fa-subway"></i>ThomasTheTrain Development</p></div>
     </div>
-  </div>
-<footer class="w3-container w3-theme-dark">
-   <div class="w3-display-container w3-black" style="height:100px;">
-    <div class="w3-display-topmiddle" id="bottom-text"><br>Hopefully this helped break up the boredom. However, for everyone else who can't get enough of the media sensationalism
-      <a href="https://www.cdc.gov/coronavirus/2019-nCoV/index.htmlm">CDC Covid-19</a>     
-    </div> 
-    <div class="w3-display-bottomleft"><p><i class="fas fa-fist-raised w3"></i>WrongHanded Development</p></div>
-    <div class="w3-display-bottommiddle"><p><i class="fas fa-peace"></i>LoFoSho Development</p></div>
-    <div class="w3-display-bottomright"><p><i class="fad fa-subway"></i>ThomasTheTrain Development</p></div>
-  </div>
-  
-  </div>
-</footer>
-
-
-  
-
+    
+    </div>
+  </footer>
 </body>
 
 </html>    
