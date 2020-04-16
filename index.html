@@ -19,9 +19,12 @@
   <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 
   <!-- CSS-->
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="stylesheet.css">
   <link rel="stylesheet" href="BMI.css">
   
-
+  
+  <script src="BMI.js"></script>
   <!--ajax-->
   <script src="relax\bmiCalculator.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -42,6 +45,7 @@
   <!--web font loader-->
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
   <!--person stylesheet-->
+
   <link rel="stylesheet" src="stylesheet.css">
 </head>
 
@@ -52,7 +56,7 @@
     <a href="#" class="w3-bar-item w3-button">Relax<i class="fal fa-hand-peace"></i></a>
     <a href="#" class="w3-bar-item w3-button">Games <i class="fad fa-joystick"></i></a>
   </nav>
-  <header class="w3-container w3-theme w3-padding w3-animate-top" id="myHeader">
+  <header class="w3-container w3-theme w3-padding w3-animate-top" style="width:100vw" id="myHeader">
     <div class="w3-center">
       <span style="font-size: 6em; color: rgb(182, 27, 0);">
         <i class="fas fa-brain w3-animate-bottom"></i>
@@ -60,94 +64,64 @@
 
       <h1>Keep My Mind Busy</h1>
       <p>A space for those who want to escape the COVID-19 negativity.</p>
-      <div class="">
-        
-      </div>
     </div>
   </header>
     <div class="row">
       <div class="col-6">
-        <body class="bmiLanding">
-          <a id="advBMITop" name="advBMITop"></a>
-          <div id="advBMIouterHolder">
-            <div id="BMIHolder">
-              <div id="advBMIEntry" class="advBMIContent">
-                <div id="startHolder">
-                      <span class="title">Compute Your BMI</span>
-                      <div>
-                <p class="fieldHolder"><input placeholder="Weight" id="advBMIWeight" pattern="\d*"><span>lbs</span></p>
-                <p class="fieldHolder height_ft"><input placeholder="Height" id="advBMIHeightFeet" pattern="\d*"><span>ft</span></p>
-                <p class="fieldHolder height_in"><input placeholder="Height" id="advBMIHeightInches" pattern="\d*"><span>in</span></p>
-                <p class="fieldHolder gender"><select onchange="changeMe(this)" id="advBMISex"><option selected="" disabled=""> Gender </option> <option value="Male"> Male </option> <option value="Female"> Female </option></select></p>
-                          </div>
-                          <input onclick="ShowADVBMIResults();" value="Calculate" id="advBMISubmit" type="button">
-              </div><div style="display:none;" id="enteredHolder">
-                      <div class="advBMIHeader">You are a:</div>
-                        <div>
-                <p class="fieldHeader"><span id="enteredLBS"></span> lbs,</p>
-                <p class="fieldHeader"><span id="enteredFeet"></span> ft</p>
-                <p class="fieldHeader"><span id="enteredInches"></span> in,</p>
-                <p class="fieldHeader gender"><span id="enteredSex"></span></p>
-                          </div>
-                          <div class="clearfix"></div>
-                      <div id="proteinHeader" class="advBMIHeader">Your current BMI is:</div>
-                      <div id="proteinContent" class="advBMIContent">
-                          <span id="advBMICurrent"></span>
-                      </div>
-                      <input onclick="window.close();" value="Close Window" id="advBMIReset" type="button">
-                      <input onclick="ResetADVBMIResults();" value="Reset" id="advBMIResets" type="button">
-              </div>
-              <div class="clearfix">
-              </div>
-            </div>
-          </div>
-        </div>
+          <form id="form" name="bmiCalc">
+            <div class="bmiLanding">BMI Calculator</div>
+            <div class="sub">Body Mass Indicator for Adults</div>
+            <!--Input for body weight-->
+                <div class="input">
+                    <input for="weight" class="text" placeholder="Your Weight (lbs)*" type="text" name="weight">
+                </div>
+            <!--Input for height-->
+                <div class="input">
+                    <input for="height" class="text" placeholder="Your Height (Inches)*" type="text" name="height">
+                </div>
+            <!--BMI Submit Button-->
+                <div>
+                    <input class="button" type="button" value="Calculate BMI" onClick="calculateBMI()">
+                </div>
+            <!--BMI Results-->
+                <div class="input">
+                    <input for="bmi_result" class="text" placeholder="Your BMI" type="text" name="bmi">    
+                </div>
+            <!--BMI Message Results-->
+                <div class="input">
+                    <input for="bmi_message" placeholder="This Means" class="text" type="text" name="meaning">
+                </div>
+            <!--BMI Reset-->
+                <div>
+                    <input class="button" type="reset" value="Reset">
+                </div>
+            </form>
           <script type="text/javascript">
           function changeMe(sel)
           {
             sel.style.color = "#3a3a3a";              
           }
       </script>
-      </div>
-      <div class="col-6">
+    </div>
+  <div class="col-6" id="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/4pKly2JojMw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>    
 
-      </div>
+
       
-      </body>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+      
+</body>      
+
     </div>
   </div>
-
-
 <footer class="w3-container w3-theme-dark">
-  
- 
-  <div class="w3-display-container w3-black" style="height:100px;">
-    <div class="w3-display-topmiddle" id="bottom-text"><nobr>Hopefully this helped break up the boredom. However, for everyone else who can't get enough of the media sensationalism
-      <a href="https://www.cdc.gov/coronavirus/2019-nCoV/index.htmlm">CDC Covid-19</a></nobr>     
+   <div class="w3-display-container w3-black" style="height:100px;">
+    <div class="w3-display-topmiddle" id="bottom-text"><br>Hopefully this helped break up the boredom. However, for everyone else who can't get enough of the media sensationalism
+      <a href="https://www.cdc.gov/coronavirus/2019-nCoV/index.htmlm">CDC Covid-19</a>     
     </div> 
-      <div class="w3-display-bottomleft"><p><i class="fas fa-fist-raised w3"></i>WrongHanded Development</p></div>
-      <div class="w3-display-bottommiddle"><p><i class="fas fa-peace"></i>LoFoSho Development</p></div>
-      <div class="w3-display-bottomright"><p><i class="fad fa-subway"></i>ThomasTheTrain Development</p></div>
+    <div class="w3-display-bottomleft"><p><i class="fas fa-fist-raised w3"></i>WrongHanded Development</p></div>
+    <div class="w3-display-bottommiddle"><p><i class="fas fa-peace"></i>LoFoSho Development</p></div>
+    <div class="w3-display-bottomright"><p><i class="fad fa-subway"></i>ThomasTheTrain Development</p></div>
   </div>
   
   </div>

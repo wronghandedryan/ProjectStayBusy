@@ -40,7 +40,7 @@ $("#submit").on("click", function() {
     var queryURLCurrent = "https://bmi.p.rapidapi.com/&appid=83bf76534amshf115aa3d928cc20p1d7764jsn45e5da813e3a";
     
     $.ajax({
-      url: queryURLCurrent,
+      url: queryURLCurrent, 
       method: "POST"
       console.log(data)
     })
