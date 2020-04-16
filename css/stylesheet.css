@@ -60,9 +60,11 @@ canvas {
     width: 80vmin;
     border: 10px solid cornflowerblue;
   }
+
   main{
     border: 5px;
   }
+
   #jokes{
     box-sizing: border-box;
   }
