@@ -20,27 +20,27 @@
 
   <!-- CSS-->
   <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="bmi-youtube.css">
   <link rel="stylesheet" href="stylesheet.css">
-  <link rel="stylesheet" href="BMI.css">
   
   
-  <script src="BMI.js"></script>
-  <script src="youtube.js"></script>
+  
+ 
+  
   <!--ajax-->
-  <script src="relax\bmiCalculator.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <!--jquery mobile-->
-  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+  <!-- <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css"> -->
   <!--w3 stylesteet-->
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script> -->
   <!--jquery ui-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <!-- <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css"> -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script> -->
   <!--Font awesome -->
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-IIED/eyOkM6ihtOiQsX2zizxFBphgnv1zbe1bKA+njdFzkr6cDNy16jfIKWu4FNH" crossorigin="anonymous">
   <!--web font loader-->
@@ -57,10 +57,9 @@
     <a href="#" class="w3-bar-item w3-button">Relax<i class="fal fa-hand-peace"></i></a>
     <a href="#" class="w3-bar-item w3-button">Games <i class="fad fa-joystick"></i></a>
   </nav>
-  <header class="w3-container w3-theme w3-padding w3-animate-top" style="width:100vw" id="myHeader">
+  <header class="w3-container w3-theme w3-padding" style="width:100vw" id="myHeader">
     <div class="w3-center">
       <span style="font-size: 6em; color: rgb(182, 27, 0);">
-        <i class="fas fa-brain w3-animate-bottom"></i>
       </span>
 
       <h1>Keep My Mind Busy</h1>
@@ -69,34 +68,34 @@
   </header>
   <div id="mainContent">
     <div class="w3-row" style="background-color: black;">
-      <div class="w3-col m6 p1">
+      <div class="w3-col m4 p1">
           <form id="form" name="bmiCalc">
             <div class="bmiLanding">BMI Calculator</div>
             <div class="sub">Body Mass Indicator for Adults</div>
             <!--Input for body weight-->
-                <div class="input">
+                
                     <input for="weight" class="text" placeholder="Your Weight (lbs)*" type="text" name="weight">
-                </div>
+    
             <!--Input for height-->
-                <div class="input">
+              
                     <input for="height" class="text" placeholder="Your Height (Inches)*" type="text" name="height">
-                </div>
+         
             <!--BMI Submit Button-->
-                <div>
+            
                     <input class="button" type="button" value="Calculate BMI" onClick="calculateBMI()">
-                </div>
+     
             <!--BMI Results-->
-                <div class="input">
+  
                     <input for="bmi_result" class="text" placeholder="Your BMI" type="text" name="bmi">    
-                </div>
+     
             <!--BMI Message Results-->
-                <div class="input">
+       
                     <input for="bmi_message" placeholder="This Means" class="text" type="text" name="meaning">
-                </div>
+    
             <!--BMI Reset-->
-                <div>
+     
                     <input class="button" type="reset" value="Reset">
-                </div>
+ 
             </form>
           <script type="text/javascript">
             function changeMe(sel)
@@ -105,39 +104,12 @@
             }
         </script>
       </div>
-      <div class="w3-col m6 p1">
+      <div class="w3-col m7 p1">
         <div class="youtube-responsive-container">
           <section id="video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/4pKly2JojMw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
           </section> 
-          <article class="w3-row">
-            <div class="detail">
-              <div class="w3-col m3">
-                <img src="https://i.ytimg.com/vi_webp/cnKZit6VB44/mqdefault.webp" alt="" class="thumb">
-              </div>
-              <div class="w3-col m9">
-                <h4>Title</h4>
-                <p>I am a description</p>
-              </div>
-            </div>
-            <div class="detail">
-              <div class="w3-col m3">
-                <img src="https://i.ytimg.com/vi_webp/cnKZit6VB44/mqdefault.webp" alt="" class="thumb">
-              </div>
-              <div class="w3-col m9">
-                <h4>Title</h4>
-                <p>I am a description</p>
-              </div>
-            </div>
-            <div class="detail">
-              <div class="w3-col m3">
-                <img src="https://i.ytimg.com/vi_webp/cnKZit6VB44/mqdefault.webp" alt="" class="thumb">
-              </div>
-              <div class="w3-col m9">
-                <h4>Title</h4>
-                <p>I am a description</p>
-              </div>
-            </div>
+          <article class="w3-row" id='youtubeResults'>
           </article>
         </div>  
       </div>
@@ -156,6 +128,7 @@
     
     </div>
   </footer>
+  <script src="youtube.js"></script>
 </body>
 
 </html>    

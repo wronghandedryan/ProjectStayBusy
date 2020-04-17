@@ -15,25 +15,45 @@ body {
   padding: 1rem;
 }
 
-/* Create two equal columns that floats next to each other */
+
 .column {
   align-content: center;
   width: 45%;
   padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
+  height: 300px; 
 }
 
-/* Clear floats after the columns */
+
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
+/* @media only screen and (max-width: 560px){
+  #video{
+    width:100%
+  }
+
+  iframe {
+    width:100%
+  }
+} */
+
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 782px) {
   .column {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 1000px){
+  #video{
+    width: 100%
+  }
+
+  iframe{
+    width: 100%
   }
 }
 
@@ -58,9 +78,18 @@ body {
   margin: 0 auto;
   border: 3px solid #333333; 
 }
+/* 
+.m4 {
+  box-shadow: 0 6px 6px 6px firebrick, 0 4px 4px 4px slateblue;
+  border-radius: 20px;
+  margin: 0 2% 0 2%
+} */
 
-.input{ width: 100px;
-     margin: 10px; }
+input
+{ 
+  width: 90%!important;
+  margin:1% 5% 1% 5%!important; 
+}
 
 .button{ width: 195px;
       border: 2px solid #00BDFF;
@@ -84,6 +113,11 @@ body {
   padding:30px 0;
 }
 
+#youtubeResults {
+  max-height: 50vh;
+  overflow: scroll;
+}
+
 .container {
   width: 560px;
   height: 100vh;
@@ -91,7 +125,6 @@ body {
   margin: 0 auto;
 }
  section {
-  position: ;
   text-align: center;
   width: 560px;
 }
@@ -101,7 +134,7 @@ section {
 
 .thumb {
   height: 70px;
-  width: 100px
+  width: 100px;
 }
 
 .detail:hover {
@@ -116,4 +149,12 @@ section {
   margin: 0 auto;
   float: left;
   margin-bottom: 5px;
+}
+
+.m9 h4 {
+  color: whitesmoke
+}
+
+.m9 p {
+  color: whitesmoke
 }
