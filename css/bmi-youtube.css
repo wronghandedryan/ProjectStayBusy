@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background: black;
+}
+
+#mainContent {
+  min-height: calc(100vh - 350px);
+  overflow: auto;
+  padding: 1rem;
+}
+
+
+.column {
+  align-content: center;
+  width: 45%;
+  padding: 10px;
+  height: 300px; 
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* @media only screen and (max-width: 560px){
+  #video{
+    width:100%
+  }
+
+  iframe {
+    width:100%
+  }
+} */
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 782px) {
+  .column {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1000px){
+  #video{
+    width: 100%
+  }
+
+  iframe{
+    width: 100%
+  }
+}
+
+
+/* BMI FORM */
+    #bmiLanding{ width: 220px; 
+      background-color: rgba(251,121,27,1.00);
+      font-size: 25px;
+      color: white; 
+      padding: 10px 10px 0px 10px;  }
+
+.sub{ 
+      background-color: rgb(252, 151, 151);
+      font-size: 16px;
+      color: #045453; 
+      padding: 10px 10px 10px 10px;  }
+
+#form { 
+  width: 80%;
+  border-radius: 3px;
+  height: 355px;
+  margin: 0 auto;
+  border: 3px solid #333333; 
+}
+/* 
+.m4 {
+  box-shadow: 0 6px 6px 6px firebrick, 0 4px 4px 4px slateblue;
+  border-radius: 20px;
+  margin: 0 2% 0 2%
+} */
+
+input
+{ 
+  width: 90%!important;
+  margin:1% 5% 1% 5%!important; 
+}
+
+.button{ width: 195px;
+      border: 2px solid #00BDFF;
+      margin-left: 15 px;
+      background-color: lightcoral;
+      transition: border .5s, background-color .5s, color .5s; }
+
+.text{ font-size: 17px;
+    transition: border 1s, background-color 1s, color .5s; }
+.text:hover{ background-color: #86F0FF; }
+
+/* YOUTUBE  */
+
+#video {
+  background-color: black;
+  margin: 0 auto;
+
+}
+.youtube-responsive-container {
+  position:relative;
+  padding:30px 0;
+}
+
+#youtubeResults {
+  max-height: 50vh;
+  overflow: scroll;
+}
+
+.container {
+  width: 560px;
+  height: 100vh;
+  background-color: #fff;
+  margin: 0 auto;
+}
+ section {
+  text-align: center;
+  width: 560px;
+}
+section {
+  top: 50px;
+}
+
+.thumb {
+  height: 70px;
+  width: 100px;
+}
+
+.detail:hover {
+    border: 2px solid #ff9999;
+}
+
+.detail {
+  width: 100%;
+  padding: 8px 12px;
+  border: 2px solid white;
+  border-radius: 8px;
+  margin: 0 auto;
+  float: left;
+  margin-bottom: 5px;
+}
+
+.m9 h4 {
+  color: whitesmoke
+}
+
+.m9 p {
+  color: whitesmoke
+}
