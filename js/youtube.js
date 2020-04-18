@@ -4,7 +4,6 @@ $(document).ready(function() {
     var URL = `https://cors-anywhere.herokuapp.com/https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&key=${key}&maxResults=20&playlistId=${playlistId}`;
     loadVids(URL);
 });    
-​
 function loadVids(URL) {
     console.log(URL)
     $.ajax({
@@ -17,7 +16,6 @@ function loadVids(URL) {
         appendVids(data.items.map(a=> a.snippet))
     })
 }
-​
 function mainVid(id) {
     $('#video').html(`
     <iframe width="560" height="315" 
@@ -25,7 +23,7 @@ function mainVid(id) {
     allow="accelerometer; autoplay; encrypted-media;" allowfullscreen></iframe>
     `);
 };
-​
+
 function appendVids(data){
     data.forEach(function(item){
         $('#youtubeResults').append(`<div class="detail" id=${item.resourceId.videoId}>
@@ -39,8 +37,6 @@ function appendVids(data){
       </div>`)
     })
 }
-​
 $(document).on('click', '.detail', function(){
     mainVid($(this).attr('id'))
 })
-​
