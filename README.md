@@ -18,6 +18,7 @@ pacman - https://www.google.com/doodles/30th-anniversary-of-pac-man
 ##Thanks
 To my Team Mates, This was our first project and we hit every goal. Don't Forget!
 To the ta's and teacher of the fullstack-flex boot camp.
+
 ##Contributing
 Ryan O'Boyle 
 Lauren Garelick
