@@ -45,7 +45,7 @@ body {
   }
   
   #bottom-text {
-    font-size: .5rem;
+    font-size: 1rem;
     font-weight: 10;
     text-align: center;
     width: 100%;
@@ -57,7 +57,7 @@ body {
     box-sizing: border-box;
   }
 canvas {
-    width: 80vmin;
+    width: 40vmin;
     border: 10px solid cornflowerblue;
   }
 
